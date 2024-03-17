@@ -21,31 +21,30 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 *******************************************************************************
 ''')
 print("Welcome to Treasure Island.")
-print("Your mission is to find the treasure.")
+print("Your mission is to find the treasure.") 
 
 #https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
 
 #Write your code below this line 👇
 
 choices = {
-    "right": "You fell into a hole. Game Over.",
-    "left":
-    "You have come to a lake. There is an island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swim' to swim across.",
-    "wait":
-    "You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?",
-    "swim": "You get attacked by an angry trout. Game Over.",
-    "red": "It's a room full of fire. Game Over.",
-    "blue": "You were eaten by beasts. Game Over.",
-    "yellow": "You Win!",
+  "left": "You fell into a hole. Game Over.",
+  "right": "You have come to a lake. There is an island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swim' to swim across.",
+  "wait": "You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?",
+  "swim": "You get attacked by an angry trout. Game Over.",
+  "red": "It's a room full of fire. Game Over.",
+  "blue": "You were eaten by beasts. Game Over.",
+  "yellow": "You Win!",
 }
 
 alive = True
 
-for step in [
-    "left or right? ", "swim or wait? ", "which door, red, blue or yellow? "
-]:
+
+
+for step in ["left or right?", "swim or wait?", "which door, red, blue or yellow?"]:
   if alive:
-    choice = input(step + "\n")
-    alive = (choice.lower() in ["left", "wait", "yellow"])
-    print(f"Alive = {alive}")
-    print(choices[choice])
+    choice = input(choices[step.split()[0]])
+    alive = (choice.lower() not in ["left","wait","yellow"])
+    print(choices[step])
+      
+    
