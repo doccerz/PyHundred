@@ -1,6 +1,7 @@
 #Password Generator Project
 import random
 
+
 def paswrd_gen(nr_letters, nr_symbols, nr_numbers):
   password = ""
   for i in range(0, nr_letters):
@@ -12,8 +13,9 @@ def paswrd_gen(nr_letters, nr_symbols, nr_numbers):
 
   pw_list = list(password)
   random.shuffle(pw_list)
-  
+
   return "".join(pw_list)
+
 
 letters = [
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
