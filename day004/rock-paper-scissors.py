@@ -41,7 +41,8 @@ def get_key_from_value(input_dict, search_value):
 rsp = {0: rock, 1: paper, 2: scissors}
 
 # map all scenarios
-vs = [["Draw", "You lose", "You win"], ["You win", "Draw", "You lose"],
+vs = [["Draw", "You lose", "You win"], 
+      ["You win", "Draw", "You lose"],
       ["You lose", "You win", "Draw"]]
 
 # player phase
