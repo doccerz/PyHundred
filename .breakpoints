@@ -1,17 +1,11 @@
 {
   "files": {
-    "player.py": [
+    "main.py": [
       {
-        "id": "c76ff48e-5d6f-4396-bc1e-bbac3f04fb6f",
-        "line": 43,
-        "version": 1391,
-        "index": 783
-      },
-      {
-        "id": "69e99013-20a0-4ba3-87c9-e259d8f89612",
-        "line": 49,
-        "version": 1391,
-        "index": 1007
+        "id": "a4b5291d-ed8c-4dad-9dc8-53374a6bb87e",
+        "line": 33,
+        "version": 5062,
+        "index": 864
       }
     ]
   }
